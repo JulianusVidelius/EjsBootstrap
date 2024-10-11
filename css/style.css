@@ -1,0 +1,75 @@
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    color: #343a40; /* Texto gris oscuro */
+}
+
+.navbar {
+    background-color: #fff; /* Navbar blanca */
+    border-bottom: 1px solid #eaeaea; /* Línea gris clara */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #343a40; /* Color del texto en la navbar */
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #007bff; /* Color azul en hover */
+}
+
+.card {
+    border: 1px solid #eaeaea; /* Borde gris claro */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s; /* Animación suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de hover */
+}
+
+.card-title {
+    color: #212529; /* Color de los títulos */
+}
+
+.btn-primary {
+    background-color: #343a40; /* Botón negro */
+    border: none; /* Sin borde */
+}
+
+.btn-primary:hover {
+    background-color: #007bff; /* Color azul en hover */
+}
+
+.carousel-inner img {
+    max-height: 400px; /* Altura máxima de las imágenes del carrusel */
+    object-fit: cover; /* Mantener proporciones de imagen */
+}
+/* Animaciones de navegación */
+.nav-link {
+    position: relative; /* Posicionamiento relativo para animaciones */
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #007bff; /* Línea azul */
+    transition: width 0.3s ease, left 0.3s ease; /* Animación de línea */
+}
+
+.nav-link:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+
+
+/* Agregar animaciones al texto del encabezado */
+h1, h2, h3, h4, h5, h6 {
+    animation: bounce 2s infinite; /* Efecto de rebote en los encabezados */
+}

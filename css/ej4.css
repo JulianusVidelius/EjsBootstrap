@@ -1,0 +1,91 @@
+/* Estilos generales */
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    color: #333; /* Texto gris oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente sencilla */
+    overflow-x: hidden; /* Evitar el scroll horizontal */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco */
+    transition: background-color 0.3s ease; /* Suavizar el cambio de color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.navbar:hover {
+    background-color: #eaeaea; /* Cambiar color al pasar el mouse */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #333; /* Texto gris oscuro */
+    transition: color 0.3s; /* Suavizar el cambio de color */
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #007bff; /* Color azul en hover */
+    transform: scale(1.1); /* Aumentar tamaño en hover */
+}
+
+/* Animaciones de navegación */
+.nav-link {
+    position: relative; /* Posicionamiento relativo para animaciones */
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #007bff; /* Línea azul */
+    transition: width 0.3s ease, left 0.3s ease; /* Animación de línea */
+}
+
+.nav-link:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+/* Estilos de transición */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Agregar animaciones al texto del encabezado */
+h1, h2, h3, h4, h5, h6 {
+    animation: bounce 2s infinite; /* Efecto de rebote en los encabezados */
+}
+
+/* Botones */
+.btn {
+    background-color: #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+    transition: transform 0.2s; /* Suavizar animación */
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Aumentar tamaño en hover */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5); /* Sombra en hover */
+}
+
+/* Efectos de borde en imágenes */
+img {
+    transition: transform 0.5s, filter 0.5s; /* Suavizar cambios de imagen */
+}
+
+img:hover {
+    transform: scale(1.05); /* Aumentar imagen en hover */
+    filter: brightness(90%); /* Oscurecer imagen en hover */
+}

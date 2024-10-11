@@ -1,0 +1,87 @@
+body {
+    background-color: #f8f9fa; /* Fondo gris claro */
+    color: #343a40; /* Texto gris oscuro */
+}
+
+.navbar {
+    background-color: #fff; /* Navbar blanca */
+    border-bottom: 1px solid #eaeaea; /* Línea gris clara */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #343a40; /* Color del texto en la navbar */
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #007bff; /* Color azul en hover */
+}
+
+h2 {
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #212529; /* Color del título */
+}
+
+.form-control {
+    border-radius: 0.25rem; /* Bordes redondeados */
+    border: 1px solid #eaeaea; /* Borde gris claro */
+}
+
+.btn-primary {
+    background-color: #343a40; /* Botón negro */
+    border: none; /* Sin borde */
+}
+
+.btn-primary:hover {
+    background-color: #007bff; /* Color azul en hover */
+}
+/* Animaciones de navegación */
+.nav-link {
+    position: relative; /* Posicionamiento relativo para animaciones */
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #007bff; /* Línea azul */
+    transition: width 0.3s ease, left 0.3s ease; /* Animación de línea */
+}
+
+.nav-link:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+/* Estilos de transición */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Agregar animaciones al texto del encabezado */
+h1, h2, h3, h4, h5, h6 {
+    animation: bounce 2s ; /* Efecto de rebote en los encabezados */
+}
+
+.btn {
+    background-color: #007bff; /* Fondo azul */
+    color: white; /* Texto blanco */
+    transition: transform 0.2s; /* Suavizar animación */
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Aumentar tamaño en hover */
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5); /* Sombra en hover */
+}
